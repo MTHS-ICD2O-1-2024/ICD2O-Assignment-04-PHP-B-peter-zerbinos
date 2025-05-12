@@ -39,8 +39,7 @@
       $totalCost = $subtotalCost * $TAX_RATE;
 
       echo "<p>You selected a <strong>{$ticketType}</strong> ticket, <strong>{$popcornSize}</strong> popcorn, and <strong>{$drinkChoice}</strong>.</p>";
-      echo "<p>Subtotal: $" . number_format($subtotalCost, 2) . "</p>";
-      echo "<p>Total after tax: $" . number_format($totalCost, 2) . "</p>";
+      echo "<p><strong>Total after tax: $" . number_format($totalCost, 2) . "</strong></p>";
       ?>
     </main>
   </div>
