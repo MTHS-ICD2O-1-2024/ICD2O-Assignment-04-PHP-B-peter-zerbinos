@@ -7,7 +7,6 @@
   <meta name="keywords" content="movies, tickets, popcorn" />
   <meta name="author" content="Peter Zerbinos" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_orange-red.min.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <title>Movie Booking Receipt</title>
@@ -39,9 +38,9 @@
       $subtotalCost = $ticketPrices[$ticketType] + $popcornPrices[$popcornSize] + $drinkPrices[$drinkChoice];
       $totalCost = $subtotalCost * $TAX_RATE;
 
-      echo "You have selected a <strong>{$ticketType}</strong> ticket, a <strong>{$popcornSize}</strong> popcorn, and a <strong>{$drinkChoice}</strong>.<br>";
-      echo "Subtotal: $" . number_format($subtotalCost, 2) . "<br>";
-      echo "Total after tax: $" . number_format($totalCost, 2) . "<br>";
+      echo "<p>You selected a <strong>{$ticketType}</strong> ticket, <strong>{$popcornSize}</strong> popcorn, and <strong>{$drinkChoice}</strong>.</p>";
+      echo "<p>Subtotal: $" . number_format($subtotalCost, 2) . "</p>";
+      echo "<p>Total after tax: $" . number_format($totalCost, 2) . "</p>";
       ?>
     </main>
   </div>
